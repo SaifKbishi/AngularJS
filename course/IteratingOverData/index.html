@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Iterating Over Data</title>
+</head>
+<body >
+    <div ng-init="namesArr=['Dave','Jeff','Heedy','Danny']">
+        <ul>
+            <li ng-repeat="name in namesArr">{{name}}</li>
+        </ul>
+    </div>
+    <div ng-init="pepoleArr=[{name:'Dave', city:'haifa'},{name:'Jeff', city:'Akko'},{name:'Heedy', city:'TLV'},{name:'Danny',city:'Toronto'}]">
+        <ul>
+            <li ng-repeat="person in pepoleArr">{{person.name}} from {{person.city}}</li>
+        </ul>
+    </div>
+    
+
+
+    <script src="angular.js"></script>
+</body>
+</html>
